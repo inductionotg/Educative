@@ -13,19 +13,19 @@ import {createBrowserRouter,Outlet} from 'react-router-dom'
 
 export default function App() {
   return (
-    <div class="container">
-      <div class="navbar">
+    <div className="container">
+      <div className="navbar">
         <Navbar />
       </div>
-      <div class="body-wrapper">
-        <div class="sidebar">
+      <div className="body-wrapper">
+        <div className="sidebar">
           <Sidebar />
         </div>
-        <div class="body">
+        <div className="body">
           <Outlet/>
         </div>
       </div>
-      <footer class="footer">
+      <footer className="footer">
         <Footer />
       </footer>
     </div>

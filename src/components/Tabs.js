@@ -14,9 +14,7 @@ const Tabs = () =>{
         { id: 1, title: 'My Course', endpoint: 'https://www.educative.io/_next/data/230707-0729-bbfd187/catalog/prepare-for-interview.json'},
         
     ]
-    useEffect(()=>{
-        fetchData()
-    },[activeTab])
+    
     async function fetchData(){
         try{
             const response = await fetch(tabs[activeTab].endpoint)
@@ -60,7 +58,9 @@ const Tabs = () =>{
             }
         }
        
-    
+    useEffect(()=>{
+        fetchData()
+    },[activeTab])
     const handleTabClick=(tabIndex)=>{
         setActiveTab(tabIndex)
     }
@@ -88,7 +88,7 @@ const Tabs = () =>{
         
             <>
                 {activeTab === 0 && collectionData.length > 0 && (
-                        <div className='tab-content-card'>
+                        <div className='tab-content-card' key={activeTab}>
                         {collectionData.map((collection, index) => (
                             <Card collection={collection}/>
                         ))}
