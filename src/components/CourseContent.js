@@ -43,7 +43,7 @@ const CourseContent = ({categories}) =>{
                     {expandedCategories.includes(category.title) && (
                         <>
                         <p>
-                            {category.pages.length === 0 ? 'Project' : category.pages.length+" "+'Lessons'}
+                            {category.pages.length === 0 ? 'Project' : category.pages.length+"Lessons"}
                         </p>
                         <ul>
                             {category.pages.map((page) => (

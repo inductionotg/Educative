@@ -67,8 +67,8 @@ const Tabs = () =>{
 
     
     return (
-        <div class="tabs-container">
-        <div class="tabs">
+        <div className="tabs-container">
+        <div className="tabs">
             {tabs.map((tab) => (
             <button
                 key={tab.id}
@@ -82,7 +82,7 @@ const Tabs = () =>{
            
         </div>
   
-        <div class="tab-content">
+        <div className="tab-content">
             {activeTab === 1  && dataone.length===0 && <Shimmer/>}
             {activeTab === 0  && collectionData.length===0 && <Shimmer/>}
         

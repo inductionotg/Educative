@@ -64,8 +64,9 @@
   }
   
   .sidebar-item {
-    padding: 10px 20px;
+    padding: 10px;
     color: #273135;
+    text-align: center;
   }
   
   .sidebar-item:hover,
@@ -78,5 +79,8 @@
   .sidebar-icon {
     display: block;
     padding-bottom: 6px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
   }
   
