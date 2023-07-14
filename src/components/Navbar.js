@@ -11,9 +11,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-items">
         <ul className="menu-item">
-          <li>Solutions</li>
-          <li>Solutions</li>
-          <li>Solutions</li>
+          <Link to='/'><li>Home</li></Link>
+          <Link to='/details'><li>Contents</li></Link>
+          <Link to='/Chapter'><li>Chapter</li></Link>
+          
         </ul>
         <button className="btn-login"> Login </button>
       </div>
